@@ -3,10 +3,10 @@
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <label for="orderDescription">Order Description</label>
-  <input id="songDescription" name="songDescription" type="text">
+  <input id="orderDescription" name="orderDescription" type="text">
 
   @* <label for="songLyrics">add song lyrics</label>   // May add function
   <input id="songLyrics" name="songLyrics" type="text"> *@
-  
-  <button type='submit'>Add song</button>
+
+  <button type='submit'>Add new order</button>
 </form>
