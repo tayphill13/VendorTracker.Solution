@@ -6,13 +6,13 @@ using VendorTracker.Models;
 namespace VendorTracker.tests
 {
   [TestClass]
-  public class OrderTest   // soon to add : IDisposable
+  public class OrderTest : IDisposable  // soon to add : IDisposable
   {
 
-    // public void Dispose()
-    // {
-    //   Order.ClearAll();
-    // }
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
@@ -48,7 +48,7 @@ namespace VendorTracker.tests
       Assert.AreEqual(updatedDescription, result);
     }
     [TestMethod]
-    public void GetAll_ReturnsTheOrdersList_orderList()
+    public void GetAll_ReturnsEmptyOrdersList_OrderList()
     {
       List<Order> newList = new List<Order> {};
       List<Order> result = Order.GetAll();
