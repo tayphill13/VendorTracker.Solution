@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Pierre's Vendor Tracker_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This is an independent project for Epicodus to build an MVC Web Application, 7.24.2020_
 
-#### By _**Your Name Here**_
+#### By _**Taylor Phillips**_
 
 ## Description
 
@@ -17,7 +17,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 ## Setup/Installation Requirements
 
 Software Requirements
-1. .NET framework
+1. .NET core framework
 2. A code editor (Visual Studio Code, Atom, etc.)
 
 Acquire The Repo:
@@ -47,7 +47,7 @@ _Please reach out through my GitHub account._
 
 ### License
 
-Copyright (c) 2020 **_Your Name Here_**
+Copyright (c) 2020 **_Taylor Phillips_**
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
