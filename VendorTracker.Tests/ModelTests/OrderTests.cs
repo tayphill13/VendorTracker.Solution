@@ -46,7 +46,13 @@ namespace VendorTracker.tests
 
       //Assert
       Assert.AreEqual(updatedDescription, result);
-
+    }
+    [TestMethod]
+    public void GetAll_ReturnsTheOrdersList_orderList()
+    {
+      List<Order> newList = new List<Order> {};
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   
   

@@ -14,6 +14,10 @@ namespace VendorTracker.Models
       _instances.Add(this);
       Id = _instances.Count;
     }
+    public static List<Order> GetAll()
+    {
+      // return _instances;
+    }
 
 
   }
