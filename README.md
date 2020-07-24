@@ -6,12 +6,18 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is an MVC web application using C#/.Net core and displaying the use of RESTful Routing.  The concept is that a bakery or storefront owner, Pierre, can track his many vendors that are requesting his wares.  Pierre can add vendors to his list to track and then within each vendor, orders can be added.  Additional notes can be added, such as, "I need 40 of these by Friday".  There are links on each page that can be used to navigate back to vendor page and home page._
 
 ## Specifications
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
+| Pierre is able to start at his landing page that greets him |   |   |
+| Pierre can add a vendor if none are available   |     |     |
+| When Pierre adds a vendor name, it will then redirect him to the vendor list  |   |     |
+| If Pierre clicks on a vendor name then he add orders for that specific vendor, including the order name and any pertinent notes for that order and then is redirected back to that vendor page  |     |       |
+| When Pierre clicks on an order, it will display order details, including any notes that were added  |  |  |
+| Pierre can click on Go Home from Vendor's list page and Vendor page, to take him back to his main page |   |     |
 
 
 ## Setup/Installation Requirements
@@ -34,7 +40,7 @@ Running the program:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs_
 
 ## Support and contact details
 
@@ -43,7 +49,7 @@ _Please reach out through my GitHub account._
 ## Technologies Used
 
 * _VSCode_
-* _C# and .NET_
+* _C# and .NET core with Razor_
 
 ### License
 
