@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using VendorTracker.Models;
 using System.Collections.Generic;
 
-namespace ToDoList.Controllers
+namespace VendorTracker.Controllers
 {
   public class ItemsController : Controller
   {
