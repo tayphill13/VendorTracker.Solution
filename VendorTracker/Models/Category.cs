@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace VendorTracker.Models
 {
-  public class Category
+  public class Category   // This category will be a vendor 
   {
     private static List<Category> _instances = new List<Category> {};
     public string Name { get; set; }
