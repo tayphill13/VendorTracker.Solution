@@ -1,0 +1,14 @@
+@using ToDoList.Models;
+
+<h3>Here are all the items in @Model["category"].Name:</h3>
+
+<ol>
+@foreach (Item item in @Model["items"])   //Items is a list of items, of the item type.
+{                                         //Model is the data we are passing into the view
+  <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
+}
+</ol>
+
+<p><a href='/categories/@Model["category"].Id/items/new'>Add a new item</a></p>
+<p><a href='/categories'>Return to categories list</a></p>
+<p><a href='/'>Return to Main Page</a></p
