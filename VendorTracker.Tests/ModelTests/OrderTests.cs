@@ -77,10 +77,18 @@ namespace VendorTracker.tests
 
       Assert.AreEqual(1, result);
     }
-  
-  
-  
-  
+    [TestMethod]
+    public void Find_ReturnsTheCorrectOrder_Order()
+    {
+      string description01 = "30 lbs of flour";
+      string descritpion02 = "batch of cookies";
+      Order newOrder1 = new Order(description01);
+      Order newOrder2 = new Order(descritpion02);   //Making multiple order to test indexing, but only use 1
+      
+      Order result = Order.Find(2);
+
+      Assert.AreEqual(newOrder2, result);
+    }
   
   }
 
