@@ -18,11 +18,11 @@ namespace VendorTracker.Controllers
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
-      Vendor vendor = Vendor.Find(Id);
+      Vendor vendor = Vendor.Find(vendorId);
       Dictionary<string, object> model = new Dictionary<string, object>();
       model.Add("order", order);
       model.Add("vendor", vendor);
-      return View(model);
+      return View(model);  // Display the dictionary "model"
     }
 
     [HttpPost("/orders/delete")]
