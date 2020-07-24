@@ -2,11 +2,11 @@
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderDescription">Order Description</label>
+  <label for="orderDescription">What does the order contain?</label>
   <input id="orderDescription" name="orderDescription" type="text">
 
-  @* <label for="songLyrics">add song lyrics</label>   // May add function
-  <input id="songLyrics" name="songLyrics" type="text"> *@
+  <label for="notes">add notes about this order </label> 
+  <input id="notes" name="notes" type="text">
 
   <button type='submit'>Add new order</button>
 </form>
