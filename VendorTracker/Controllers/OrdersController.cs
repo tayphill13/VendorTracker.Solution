@@ -4,31 +4,31 @@ using System.Collections.Generic;
 
 namespace VendorTracker.Controllers
 {
-  public class ItemsController : Controller
+  public class OrdersController : Controller
   {
 
-    [HttpGet("/categories/{categoryId}/items/new")]
-    public ActionResult New(int categoryId)
+    [HttpGet("/vendors/{vendorId}/orders/new")]
+    public ActionResult New(int vendorId)
     {
-      Category category = Category.Find(categoryId);
-      return View(category);
+      Vendor vendor = Vendor.Find(vendorId);
+      return View(vendor);
     }
 
-    [HttpGet("/categories/{categoryId}/items/{itemId}")]
-    public ActionResult Show(int categoryId, int itemId)
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
+    public ActionResult Show(int vendorId, int orderId)
     {
-      Item item = Item.Find(itemId);
-      Category category = Category.Find(categoryId);
+      Order order = Order.Find(orderId);
+      Vendor vendor = Vendor.Find(Id);
       Dictionary<string, object> model = new Dictionary<string, object>();
-      model.Add("item", item);
-      model.Add("category", category);
+      model.Add("order", order);
+      model.Add("vendor", vendor);
       return View(model);
     }
 
-    [HttpPost("/items/delete")]
+    [HttpPost("/orders/delete")]
     public ActionResult DeleteAll()
     {
-      Item.ClearAll();
+      Order.ClearAll();
       return View();
     }
 
