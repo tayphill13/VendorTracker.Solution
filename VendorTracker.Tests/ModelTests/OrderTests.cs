@@ -32,6 +32,22 @@ namespace VendorTracker.tests
       //Assert
       Assert.AreEqual(description, result);
     }
+    [TestMethod]
+    public void SetDescription_WillSetDescription_String()
+    {
+      //Arrange
+      string description = "Orders to be delivered soon.";
+      Order newOrder = new Order(description);
+
+      //Act
+      string updatedDescription = "Orders delivered on time";
+      newOrder.Description = updatedDescription;
+      string result = newOrder.Description;
+
+      //Assert
+      Assert.AreEqual(updatedDescription, result);
+
+    }
   
   
   
