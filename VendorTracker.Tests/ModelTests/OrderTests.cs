@@ -6,7 +6,7 @@ using VendorTracker.Models;
 namespace VendorTracker.tests
 {
   [TestClass]
-  public class OrderTest : IDisposable  // soon to add : IDisposable
+  public class OrderTest : IDisposable
   {
 
     public void Dispose()
@@ -37,7 +37,7 @@ namespace VendorTracker.tests
     {
       //Arrange
       string description = "Orders to be delivered soon.";
-      Order newOrder = new Order(description);
+      Order newOrder = new Order(description, notes);
 
       //Act
       string updatedDescription = "Orders delivered on time";
