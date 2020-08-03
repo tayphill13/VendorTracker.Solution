@@ -1,3 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+
 @using VendorTracker.Models;
 
 <h1>Your Vendors</h1>
@@ -13,7 +17,3 @@
 </ul>
 
 <a href="/orders/new">Add a new order.</a>
-
-<form action="/orders/delete" method="post">
-  <button type="submit" name="button">Clear All Orders</button>
-</form>
